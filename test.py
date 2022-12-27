@@ -1,6 +1,14 @@
-a = 10
-b = 20
-c= a * b
-print(c)
-print(a)
-print(b)
+class Test:
+    def __init__(self, a, b, c, d):
+        self.A = a
+        self.B = b
+        self.C = c
+        self.D = d
+
+    def addAll(self):
+        return self.A + self.B + self.C + self.D
+
+
+test = Test(6, 2, 3, 4)
+print(test.A)
+print(test.addAll())
